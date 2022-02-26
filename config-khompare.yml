@@ -18,7 +18,8 @@ demo.vars:
   - KJONN
   - ALDER
 
-# Variables from LagKUBE function
+# Measure Variables from LagKUBE function
+# The variables to be compared with
 kube.vars:
   - Adjusted
   - adjusted
@@ -36,12 +37,10 @@ kube.vars:
   - DEKNINGSGRAD
   - dekningsgrad
   - E0
-  - ekstradims
   - FODTE
   - folketall
   - GINI
   - LANDSNORM
-  - level
   - MALTALL
   - MEDIAN_INNTEKT
   - MEDIANINNTEKT_AH
@@ -61,8 +60,6 @@ kube.vars:
   - RATE
   - SMR
   - smr
-  - SPVFLAGG
-  - storkommune
   - sumnevner
   - sumNEVNER
   - SUMNEVNER
@@ -74,5 +71,12 @@ kube.vars:
   - v6
   - v7
   - VERDI
+
+## Misc variables to be ignored
+misc.vars:
+  - ekstradims
+  - level
+  - SPVFLAGG
+  - storkommune
 
 verbose: TRUE

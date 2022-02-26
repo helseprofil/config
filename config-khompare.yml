@@ -20,9 +20,59 @@ demo.vars:
 
 # Variables from LagKUBE function
 kube.vars:
-  - TELLER
+  - Adjusted
+  - adjusted
+  - ADJUSTED
+  - ANT_OPPGITT
+  - teller_aarlig
+  - Ant_pers
+  - ANTALL
+  - antall
+  - Antall_personer
+  - antallaar
+  - ANTLEDIGE
+  - Crude
+  - crude
+  - DEKNINGSGRAD
+  - dekningsgrad
+  - E0
+  - ekstradims
+  - FODTE
+  - folketall
+  - GINI
+  - LANDSNORM
+  - level
+  - MALTALL
+  - MEDIAN_INNTEKT
+  - MEDIANINNTEKT_AH
+  - MEIS
+  - NETTO
+  - NEVNER
+  - nevner
+  - nevner_aarlig
+  - num_femGeonivaa
+  - PERSONER
+  - Personer
+  - personer_distribnett
+  - per1000
+  - PRIKK
+  - PROGNOSEAAR
+  - prosentandel
   - RATE
   - SMR
-  - MEIS
+  - smr
+  - SPVFLAGG
+  - storkommune
+  - sumnevner
+  - sumNEVNER
+  - SUMNEVNER
+  - sumteller
+  - sumTELLER
+  - SUMTELLER
+  - TELLER
+  - TILVEKST
+  - v6
+  - v7
+  - VERDI
 
 verbose: TRUE

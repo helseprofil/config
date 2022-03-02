@@ -9,7 +9,7 @@ linux.drive:
 
 # Don't include the drive when specifying kube-root
 kube.root:
-  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/PRODUKTER/KUBER/KOMMUNEHELSA"
+  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/PRODUKTER/KUBER"
 
 # Demographic variables
 demo.vars:

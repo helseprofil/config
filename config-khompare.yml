@@ -25,7 +25,6 @@ kube.vars:
   - adjusted
   - ADJUSTED
   - ANT_OPPGITT
-  - teller_aarlig
   - Ant_pers
   - ANTALL
   - antall
@@ -67,6 +66,7 @@ kube.vars:
   - sumTELLER
   - SUMTELLER
   - TELLER
+  - teller_aarlig
   - TILVEKST
   - v6
   - v7

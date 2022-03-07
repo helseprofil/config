@@ -14,10 +14,10 @@ folder.data:
  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/ORGDATA"
 
 db:
- - "raw-database_BE.accdb"
+ - raw-database_BE.accdb
 
 geo:
- - "geo-koder.accdb"
+ - geo-koder.accdb
 
 verbose: TRUE
 
@@ -33,20 +33,29 @@ vals: 3
 
 ## Standard columns
 columns:
- - c("GEO", "LEVEL", "AAR", "KJONN", "ALDER", "UTDANN", "LANDSSB")
+ - GEO
+ - LEVEL
+ - AAR
+ - KJONN
+ - ALDER
+ - UTDANN
+ - LANDSSB
 
 ## Columns with numeric values. GEO must not be converted to numeric at early
 ## stage because some geo codes has to be a combination of 2 columns and need
 ## to keep the leading 0 on second column before merging. GEO will only be
 ## converted to numeric after merging
 num:
- - c("GEO", "AAR", "KJONN", "ALDER")
+ - GEO
+ - AAR
+ - KJONN
+ - ALDER
 
 ## Use for debuging purposes only ----------------
  #Choose "deep" to show helper functions as well
 debug:  FALSE
 #If other than 0 then x rows will be selected
-debug.nrow:  0
+debug.nrow: 0
 #Select specific rows eg. 20:50
 debug.row: NULL
 #Recode but don't aggregate if TRUE
@@ -55,4 +64,5 @@ debug.aggregate: FALSE
 debug.geo: FALSE
 
 ## Just for fun -----------------
-emoji: "mark"
+emoji:
+ - mark

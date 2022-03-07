@@ -1,11 +1,11 @@
-# which year of geo codes for recoding should refer to
-year:
- - 2022
+# Geo recode reference year
+# To select which geo recode table to use eg. grunnkrets2021, kommune2021
+year: 2021
 
 win.drive:
-  - "F:"
+ - "F:"
 linux.drive:
-  - "/mnt/F"
+ - "/mnt/F"
 
 folder.db:
  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/STYRING/raw-khelse"
@@ -20,12 +20,13 @@ geo:
  - geo-koder.accdb
 
 verbose: TRUE
-
 aggregate: TRUE
-
 implicit.null: TRUE
-recode.base: FALSE
 parallel: FALSE
+
+# Use only year in the original data for geo recode or all in the geo codebook
+# See do_geo_recode documentation on arg "base"
+recode.base: FALSE
 
 ## Number of TABS and VALS
 tabs: 3
@@ -51,9 +52,11 @@ num:
  - KJONN
  - ALDER
 
-## Use for debuging purposes only ----------------
- #Choose "deep" to show helper functions as well
-debug:  FALSE
+## -----------------------------------------------
+## Use for debuging purposes only
+## -----------------------------------------------
+#Choose "deep" to show helper functions as well
+debug: FALSE
 #If other than 0 then x rows will be selected
 debug.nrow: 0
 #Select specific rows eg. 20:50

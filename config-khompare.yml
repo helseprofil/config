@@ -11,6 +11,11 @@ linux.drive:
 kube.root:
   - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/PRODUKTER/KUBER"
 
+# Folder to keep relevant files for KHompare to work
+# such as population reference and database files
+khompare.root:
+  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/VALIDERING/KHompare"
+
 # Demographic variables
 demo.vars:
   - GEO

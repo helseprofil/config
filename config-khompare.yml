@@ -83,5 +83,6 @@ misc.vars:
   - level
   - SPVFLAGG
   - storkommune
+  - RATE.n
 
 verbose: TRUE

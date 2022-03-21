@@ -16,6 +16,14 @@ kube.root:
 khompare.root:
   - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/VALIDERING/KHompare"
 
+# Geo granularity. "K" is for bigger kommuner and "km" for smaller
+geo.levels:
+  - L
+  - F
+  - K
+  - km
+  - B
+
 # Demographic variables
 demo.vars:
   - GEO

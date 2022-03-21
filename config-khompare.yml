@@ -84,6 +84,5 @@ misc.vars:
   - SPVFLAGG
   - storkommune
   - RATE.n
-  - PRIKK
 
 verbose: TRUE

@@ -38,6 +38,25 @@ recode.base: FALSE
 tabs: 3
 vals: 3
 
+# Geographical granularity
+geo.levels:
+  - land
+  - grunnkrets
+  - fylke
+  - kommune
+  - bydel
+  - delbydel
+
+# Abbreviation for geo granularity that will be use in AGGREGATE column in
+# tabel FILGRUPPE in MS Access database. The order MUST reflect geo.levels above.
+geo.abv:
+  - L
+  - G
+  - F
+  - K
+  - B
+  - D
+
 # Standard columns that will be in the output dataset whenever available in the
 # original data
 columns:

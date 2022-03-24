@@ -34,6 +34,10 @@ parallel: FALSE
 # See do_geo_recode documentation on arg "base"
 recode.base: FALSE
 
+# Read data directly from original file event if the dataset is already in DuckDB
+# or marked as KONTROLLERT
+read.raw: FALSE
+
 # Number of TABS and VALS
 tabs: 3
 vals: 3

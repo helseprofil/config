@@ -35,7 +35,7 @@ parallel: FALSE
 recode.base: FALSE
 
 # Read data directly from original file event if the dataset is already in DuckDB
-# or marked as KONTROLLERT
+# or marked as KONTROLLERT. Options can also be activate in `read_file()` args
 read.raw: FALSE
 
 # Number of TABS and VALS

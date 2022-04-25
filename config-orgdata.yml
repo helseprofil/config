@@ -42,6 +42,16 @@ read.raw: TRUE
 tabs: 3
 vals: 3
 
+## How many digits to represent geo codes
+geo.digits:
+  - land : 1
+  - grunnkrets : 8
+  - fylke : 2
+  - kommune : 4
+  - bydel : 6
+  - delbydel : 8
+
+
 # Geographical granularities
 geo.levels:
   - land

@@ -19,9 +19,11 @@ folder.data:
 folder.org.db:
  - org_database
 
+# Access database file
 db:
  - raw-database_BE.accdb
 
+# Access database file for geo codes
 geo:
  - geo-koder.accdb
 
@@ -42,7 +44,7 @@ read.raw: TRUE
 tabs: 3
 vals: 3
 
-## How many digits to represent geo codes
+## How many digits to represent geo codes including the leading zero
 geo.digits:
   - land : 1
   - grunnkrets : 8
@@ -50,7 +52,6 @@ geo.digits:
   - kommune : 4
   - bydel : 6
   - delbydel : 8
-
 
 # Geographical granularities
 geo.levels:

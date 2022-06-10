@@ -32,7 +32,7 @@ aggregate: TRUE
 implicit.null: TRUE
 parallel: FALSE
 
-# Use only year in the original data for geo recode and aggregate
+# Use year as in the original data for geo recode and aggregate
 # See do_geo_recode documentation on arg "base"
 recode.base: FALSE
 
@@ -62,8 +62,9 @@ geo.levels:
   - bydel
   - delbydel
 
+# OBS!! The order MUST reflect geo.levels above.
 # Abbreviation for geo granularities that will be used in AGGREGATE column in
-# tabel FILGRUPPE in MS Access database. The order MUST reflect geo.levels above.
+# tabel FILGRUPPE in MS Access database.
 geo.abv:
   - L
   - G
@@ -73,7 +74,7 @@ geo.abv:
   - D
 
 # Standard columns that will be in the output dataset whenever available in the
-# original data
+# original dataset
 columns:
  - GEO
  - LEVEL
@@ -84,7 +85,7 @@ columns:
  - LANDSSB
 
 # Columns with numeric values. GEO must not be converted to numeric at early
-# stage because some geo codes has to be a combination of 2 columns and need
+# stage because some geo codes have to be a combination of 2 columns and need
 # to keep the leading 0 on second column before merging. GEO will only be
 # converted to numeric after merging
 num:

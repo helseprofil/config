@@ -30,7 +30,6 @@ geo:
 verbose: TRUE
 aggregate: TRUE
 implicit.null: TRUE
-parallel: FALSE
 
 # Use year as in the original data for geo recode and aggregate
 # See do_geo_recode documentation on arg "base"

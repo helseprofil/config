@@ -35,9 +35,9 @@ implicit.null: TRUE
 # See do_geo_recode documentation on arg "base"
 recode.base: FALSE
 
-# Read data directly from original file ie. raw, even if the dataset is already in DuckDB
-# or marked as KONTROLLERT in Access. Options can also be activated in `make_file()` args
-read.raw: TRUE
+# Read data directly from original file if TRUE ie. raw data, even if the dataset is already in DuckDB
+# or marked as KONTROLLERT in Access. Options can also be activated in `make_file()` argument
+read.raw: FALSE
 
 # Number of TABS and VALS
 tabs: 3

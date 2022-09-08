@@ -93,20 +93,26 @@ num:
  - KJONN
  - ALDER
 
+
+# MISC -----------------
+emoji:
+ - mark
+
 # -----------------------------------------------
 # Use for debuging only
 # -----------------------------------------------
 # Choose "deep" to show helper functions as well
 debug: FALSE
+
 # If other than 0 then x rows will be selected
 debug.nrow: 0
+
 # Select specific rows eg. 20:50
 debug.row: NULL
+
 # Recode but don't aggregate if TRUE
 debug.aggregate: FALSE
+
 # Keep old geo if TRUE
 debug.geo: FALSE
 
-# MISC -----------------
-emoji:
- - mark

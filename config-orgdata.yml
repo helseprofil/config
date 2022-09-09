@@ -43,15 +43,6 @@ read.raw: FALSE
 tabs: 3
 vals: 3
 
-## How many digits to represent geo codes including the leading zero
-geo.digits:
-  - land : 1
-  - grunnkrets : 8
-  - fylke : 2
-  - kommune : 4
-  - bydel : 6
-  - delbydel : 8
-
 # Geographical granularities
 geo.levels:
   - land
@@ -60,6 +51,15 @@ geo.levels:
   - kommune
   - bydel
   - delbydel
+
+## How many digits to represent geo codes including the leading zero
+geo.digits:
+  - land : 1
+  - grunnkrets : 8
+  - fylke : 2
+  - kommune : 4
+  - bydel : 6
+  - delbydel : 8
 
 # Abbreviation for geo granularities that will be used in AGGREGATE column in
 # tabel FILGRUPPE in MS Access database.

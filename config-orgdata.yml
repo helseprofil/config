@@ -61,16 +61,15 @@ geo.levels:
   - bydel
   - delbydel
 
-# OBS!! The order MUST reflect geo.levels above.
 # Abbreviation for geo granularities that will be used in AGGREGATE column in
 # tabel FILGRUPPE in MS Access database.
 geo.abv:
-  - L
-  - G
-  - F
-  - K
-  - B
-  - D
+  - land : L
+  - grunnkrets : G
+  - fylke : F
+  - kommune : K
+  - bydel : B
+  - delbydel : D
 
 # Standard columns that will be in the output dataset whenever available in the
 # original dataset

@@ -11,11 +11,11 @@ linux.drive: "/mnt/F"
 folder.db:
  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/STYRING/raw-khelse"
 
- # Where the original data files are read from
+# Where the original data files are read from
 folder.data:
  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/ORGDATA"
 
- # Foldername to keep all original data in DuckDB. Root folder is folder.db above
+# Foldername to keep all original data in DuckDB. Root folder is folder.db above
 folder.org.db: org_database
 
 # Access database file
@@ -109,4 +109,3 @@ debug.aggregate: FALSE
 
 # Keep old geo if TRUE
 debug.geo: FALSE
-

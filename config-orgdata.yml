@@ -2,6 +2,8 @@
 # To select which geo recode table to use eg. grunnkrets2021, kommune2021
 year: 2022
 
+encoding: "latin1"
+
 win.drive:
  - "F:"
 linux.drive:

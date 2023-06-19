@@ -2,12 +2,10 @@
 # To select which geo recode table to use eg. grunnkrets2021, kommune2021
 year: 2022
 
-encoding: "latin1"
+encoding: latin1
 
-win.drive:
- - "F:"
-linux.drive:
- - "/mnt/F"
+win.drive: "F:"
+linux.drive: "/mnt/F"
 
 # Where the database files are kept
 folder.db:
@@ -18,16 +16,13 @@ folder.data:
  - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/ORGDATA"
 
  # Foldername to keep all original data in DuckDB. Root folder is folder.db above
-folder.org.db:
- - org_database
+folder.org.db: org_database
 
 # Access database file
-db:
- - raw-database_BE.accdb
+db: raw-database_BE.accdb
 
 # Access database file for geo codes
-geo:
- - geo-koder.accdb
+geo: geo-koder.accdb
 
 verbose: TRUE
 aggregate: TRUE
@@ -94,10 +89,8 @@ num:
  - KJONN
  - ALDER
 
-
 # MISC -----------------
-emoji:
- - mark
+emoji: mark
 
 # -----------------------------------------------
 # Use for debuging only

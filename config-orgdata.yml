@@ -18,7 +18,7 @@ folder.data:
 # Foldername to keep all original data in DuckDB. Root folder is folder.db above
 folder.org.db: org_database
 
-# Access database file
+# Access database file for orgdata
 db: raw-database_BE.accdb
 
 # Access database file for geo codes
@@ -36,7 +36,7 @@ recode.base: FALSE
 # or marked as KONTROLLERT in Access. Options can also be activated in `make_file()` argument
 read.raw: FALSE
 
-# Number of TABS and VALS
+# Number of column for TABS and VALS
 tabs: 3
 vals: 3
 

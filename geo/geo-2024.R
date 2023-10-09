@@ -1,4 +1,4 @@
-## There are geo splitt for 2024
+## Geo codes to be deleted in 2024
 ## See norgeo issue 84
 ## Input dataset is DT and output row index must be IDX
 

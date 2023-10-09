@@ -2,11 +2,12 @@
 Configuration files to perform processes for KH related work
 
 # geo folder
-Files inside this folder will be used by ***norgeo** package to alter geo codes
-manually. This is especially relevant for splitting geo codes. The files should
-be named as *geo-year.R* where *year* refers to the year of the geo codes to be
-implemented. The output of the file should be row index ie. row line number, and
-named as **IDX**. Input dataset will always be **DT**.
+Files inside this folder will be used by **norgeo** package to delete geo codes
+manually that were not handled properly by **norgeo**. This is especially
+relevant for splitting geo codes. The files should be named as *geo-year.R*
+where *year* refers to the year of the geo codes to be implemented. The output
+of the file consist of row index ie. row line number, to be deleted. The index
+must be names as **IDX**. Input dataset will always be **DT**.
 
 There are many ways to find row index eg. using `which()`
 

@@ -2,7 +2,11 @@
 # To select which geo recode table to use eg. grunnkrets2021, kommune2021
 year: 2022
 
+# Only in use up to version 1.4.6
 encoding: latin1
+# Implemented from version 1.4.7
+encoding.access: nb-NO.utf-8
+encoding.csv: latin1
 
 win.drive: "F:"
 linux.drive: "/mnt/F"

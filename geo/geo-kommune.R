@@ -56,13 +56,12 @@ DT[oldCode %in% c(1850,  # Tysfjord
 # Remove duplicated rows
 DT <- unique(DT)
 
-
 # Changes October 2023:
 ## In 2020, the municipalities Aalesund (1504), Orskog (1523), Skodje (1529), Sandoy (1546) and Haram (1534) became Aalesund (1507)
 ## In 2024, Haram and Aalesund split up, and were given the codes 1508 (Aalesund) and 1580 (Haram)
 ## To avoid duplicates, delete the rows where
-### * Haram (1534) is recoded to AAlesund (1508)
-### * Aalesund (1504), Orskog (1523), Skodje (1529), or Sandoy (1546) is recoded to Haram (1580)
+## - Haram (1534) is recoded to AAlesund (1508)
+## - Aalesund (1504), Orskog (1523), Skodje (1529), or Sandoy (1546) is recoded to Haram (1580)
 
 delete2024 <- DT[oldCode == 1534 & currentCode == 1508 | # Haram -> Aalesund
                  oldCode %in% c(1504, 1523, 1529, 1546) & currentCode == 1580, # Others -> Haram
@@ -74,7 +73,6 @@ DT <- DT[-delete2024]
 DT[oldCode == 1507, `:=` (currentCode = 1599,
                           newName = "Møre og Romsdal")]
 DT <- unique(DT)
-
 
 # Test whether any geographical code in oldCode is duplicated
 duplicated <-  DT[!is.na(oldCode)][duplicated(oldCode) | duplicated(oldCode, fromLast = T)]

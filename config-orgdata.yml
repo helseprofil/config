@@ -1,5 +1,5 @@
 # Geo recode reference year
-# To select which geo recode table to use eg. grunnkrets2021, kommune2021
+# To select which geo recode table to use eg. 2021 will use tables grunnkrets2021, kommune2021 etc
 year: 2022
 
 # Only in use up to version 1.4.6

@@ -35,11 +35,15 @@ delete <- DT[oldCode == "01" & currentCode %in% c("32", "33") | # Ostfold -> Ake
              oldCode == "20" & currentCode == "55",             # Finnmark -> Troms
              which = TRUE]
 
+if(length(delete) > 0){
 DT <- DT[-delete]
+}
 
 # Geographical codes 30, 38 and 54 in data files must be deemed invalid and recoded to 99
-DT[oldCode %in% c("30", "38", "54"), `:=` (currentCode = 99,
-                                           newName = "Invalid due to split")]
+DT[oldCode %in% c("30", "38", "54") &
+   currentCode %in% c("31", "32", "33", "39", "40", "55", "56"), 
+   `:=` (currentCode = 99,
+         newName = "Invalid due to split")]
 DT <- unique(DT)
 
 # Test whether any geographical code in oldCode is duplicated

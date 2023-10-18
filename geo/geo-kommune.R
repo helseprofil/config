@@ -21,7 +21,7 @@
 ### Snillfjord (1613/5012) + Agdenes (1622/5016) + Meldal (1636/5023) + Orkdal (1638/5024) = Orkland
 ### Snillfjord (1613/5012) + Hitra (1617/5013) = Hitra
 ### Snillfjord (1613/5012) + Hemne (1612/5011) + Halsa (1571) = Heim
-# All codes representing the municipalities before splitting is set to 5099 Trondelag
+# All codes representing the municipalities before splitting is set to 5099 Trondelag if the period includes the split
 
 DT[oldCode %in% c(1613,  # Snillfjord
                   5012,  # Snillfjord
@@ -35,7 +35,10 @@ DT[oldCode %in% c(1613,  # Snillfjord
                   1636,  # Meldal
                   5023,  # Meldal
                   1638,  # Orkdal
-                  5024), # Orkdal
+                  5024) & # Orkdal
+     currentCode %in% c(5055, # Heim
+                        5056, # Hitra
+                        5059), # Orkland
    `:=` (currentCode = 5099,
          newName = "Trøndelag")]
 # Remove duplicated rows
@@ -45,12 +48,14 @@ DT <- unique(DT)
 ### Tysfjord (1850) + Narvik (1805) + Ballangen (1854) became Narvik (1806)
 ### Tysfjord (1850) + Hamaroy (1849) became Hamaroy (1875)
 # Narvik and Hamaroy cannot be reliably estimated backwards because they both got parts of Tysfjord,
-# All codes representing the municipalities before splitting is set to  set to 1899 
+# All codes representing the municipalities before splitting is set to  set to 1899 if the period includes the split
 
 DT[oldCode %in% c(1850,  # Tysfjord
                   1805,  # Narvik
                   1854,  # Ballangen
-                  1849), # Hamaroy
+                  1849) & # Hamaroy
+   currentCode %in% c(1806, # Narvik
+                      1875), # Hamaroy
    `:=` (currentCode = 1899,
          newName = "Nordland")]
 # Remove duplicated rows
@@ -67,11 +72,15 @@ delete2024 <- DT[oldCode == 1534 & currentCode == 1508 | # Haram -> Aalesund
                  oldCode %in% c(1504, 1523, 1529, 1546) & currentCode == 1580, # Others -> Haram
                  which = TRUE]
 
-DT <- DT[-delete2024]
+if(length(delete2024) > 0){
+  DT <- DT[-delete2024]
+}
 
 # Geographical code 1507 in data files must be deemed invalid and recoded to 1599, as this represents the sum of AAlesund (1508) + Haram (1580)
-DT[oldCode == 1507, `:=` (currentCode = 1599,
-                          newName = "Møre og Romsdal")]
+DT[oldCode == 1507 &
+   currentCode %in% c(1508, 1580), 
+   `:=` (currentCode = 1599,
+         newName = "Møre og Romsdal")]
 DT <- unique(DT)
 
 # Test whether any geographical code in oldCode is duplicated

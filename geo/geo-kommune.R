@@ -72,6 +72,7 @@ delete2024 <- DT[oldCode == 1534 & currentCode == 1508 | # Haram -> Aalesund
                  oldCode %in% c(1504, 1523, 1529, 1546) & currentCode == 1580, # Others -> Haram
                  which = TRUE]
 
+# To avoid deleting the whole table in cases where length(delete2024) == 0
 if(length(delete2024) > 0){
   DT <- DT[-delete2024]
 }

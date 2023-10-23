@@ -35,6 +35,7 @@ delete <- DT[oldCode == "01" & currentCode %in% c("32", "33") | # Ostfold -> Ake
              oldCode == "20" & currentCode == "55",             # Finnmark -> Troms
              which = TRUE]
 
+# To avoid deleting the whole table in cases where length(delete) == 0
 if(length(delete) > 0){
 DT <- DT[-delete]
 }

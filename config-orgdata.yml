@@ -3,7 +3,7 @@
 year: 2022
 
 # Only in use up to version 1.4.6
-encoding: Latin-1
+encoding: latin1
 # Implemented from version 1.4.7
 encoding.access: UTF-8
 encoding.csv: Latin-1

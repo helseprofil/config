@@ -31,5 +31,7 @@ delete <- DT[oldCode == "03013809" & currentCode != "03013809" |
              oldCode == "18200107" & currentCode != "18200107",
              which = T]
 
-
+# To avoid deleting the whole table in cases where length(delete) == 0
+if(length(delete) > 0){
 DT <- DT[-delete]
+}

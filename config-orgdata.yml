@@ -1,6 +1,6 @@
 # Geo recode reference year
 # To select which geo recode table to use eg. 2021 will use tables grunnkrets2021, kommune2021 etc
-year: 2022
+year: 2024
 
 # Only in use up to version 1.4.6
 encoding: latin1
@@ -38,7 +38,7 @@ recode.base: FALSE
 
 # Read data directly from original file if TRUE ie. raw data, even if the dataset is already in DuckDB
 # or marked as KONTROLLERT in Access. Options can also be activated in `make_file()` argument
-read.raw: FALSE
+read.raw: TRUE
 
 # Number of column for TABS and VALS
 tabs: 3

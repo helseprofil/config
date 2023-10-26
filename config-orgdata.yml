@@ -117,4 +117,4 @@ debug.geo: FALSE
 # -----------------
 # TESTING
 # -----------------
-opt.test: 200
+opt.test: 400

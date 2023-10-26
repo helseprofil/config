@@ -113,3 +113,8 @@ debug.aggregate: FALSE
 
 # Keep old geo if TRUE
 debug.geo: FALSE
+
+# -----------------
+# TESTING
+# -----------------
+opt.test: 200

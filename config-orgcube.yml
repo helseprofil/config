@@ -1,0 +1,61 @@
+# Geo recode reference year
+# To select which geo recode table to use eg. 2021 will use tables grunnkrets2021, kommune2021 etc
+year: 2024
+
+# Only in use up to version 1.4.6
+encoding: latin1
+# Implemented from version 1.4.7
+encoding.access: UTF-8
+encoding.csv: Latin-1
+
+win.drive: "O:"
+
+# Where the database files are kept
+folder.db:
+ - "Prosjekt/FHP/PRODUKSJON/STYRING"
+
+# Where the original data files are read from
+folder.data:
+ - "Prosjekt/FHP/PRODUKSJON/ORGDATA"
+
+# Access database file for orgdata
+db: KHelsa.mdb
+
+# Geographical granularities
+geo.levels:
+  - land
+  - grunnkrets
+  - fylke
+  - kommune
+  - bydel
+  - delbydel
+
+## How many digits to represent geo codes including the leading zero
+geo.digits:
+  - land : 1
+  - grunnkrets : 8
+  - fylke : 2
+  - kommune : 4
+  - bydel : 6
+  - delbydel : 8
+
+# Abbreviation for geo granularities that will be used in AGGREGATE column in
+# tabel FILGRUPPE in MS Access database.
+geo.abv:
+  - land : L
+  - grunnkrets : G
+  - fylke : F
+  - kommune : K
+  - bydel : B
+  - delbydel : D
+
+# Standard columns that will be in the output dataset whenever available in the
+# original dataset
+columns:
+ - GEO
+ - LEVEL
+ - AAR
+ - KJONN
+ - ALDER
+ - UTDANN
+ - LANDSSB

@@ -2,9 +2,7 @@
 # To select which geo recode table to use eg. 2021 will use tables grunnkrets2021, kommune2021 etc
 year: 2024
 
-# Only in use up to version 1.4.6
-encoding: latin1
-# Implemented from version 1.4.7
+# Set encoding
 encoding.access: UTF-8
 encoding.csv: Latin-1
 
@@ -20,6 +18,7 @@ folder.data:
 
 # Access database file for orgdata
 db: KHelsa.mdb
+logg: KHlogg.mdb
 
 # Geographical granularities
 geo.levels:
@@ -59,3 +58,4 @@ columns:
  - ALDER
  - UTDANN
  - LANDSSB
+ 

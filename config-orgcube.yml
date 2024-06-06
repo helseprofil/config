@@ -30,8 +30,8 @@ format.R: "R"
 stataprikkfile: "BIN/Z_Statasnutter/StataPrikking.do"
 
 # Access database file for orgdata
-KH.db: KHelsa.mdb
-KH.logg: KHlogg.mdb
+db: KHelsa.mdb
+logg: KHlogg.mdb
 
 # Geographical granularities
 geo.levels:

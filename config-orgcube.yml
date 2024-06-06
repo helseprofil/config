@@ -6,19 +6,32 @@ year: 2024
 encoding.access: UTF-8
 encoding.csv: Latin-1
 
-win.drive: "O:"
+# Paths
+folder.root: "O:/Prosjekt/FHP/PRODUKSJON"
+folder.db: "STYRING"
+folder.data: "ORGDATA"
+folder.dumps: "RUNTIMEDUMP"
+folder.filegroups: "PRODUKTER/MELLOMPROD/R/STABLAORG"
+folder.cube: "PRODUKTER/KUBER"
+folder.friskvikF: "PRODUKTER/KUBER/FRISKVIK_FYLKE"
+folder.friskvikK: "PRODUKTER/KUBER/FRISKVIK_KOMM"
+folder.friskvikB: "PRODUKTER/KUBER/FRISKVIK_BYDEL"
+folder.ovpF: "PRODUKTER/KUBER/OVP_FYLKE"
+folder.ovpK: "PRODUKTER/KUBER/OVP_KOMM"
+folder.ovpB: "PRODUKTER/KUBER/OVP_BYDEL"
+folder.buffer: file.path(fs::path_home(), "helseprofil")
 
-# Where the database files are kept
-folder.db:
- - "Prosjekt/FHP/PRODUKSJON/STYRING"
+type.datert: "DATERT"
+type.nyeste: "NYESTE"
+type.QC: "QC"
+format.csv: "csv"
+format.R: "R"
 
-# Where the original data files are read from
-folder.data:
- - "Prosjekt/FHP/PRODUKSJON/ORGDATA"
+stataprikkfile: "BIN/Z_Statasnutter/StataPrikking.do"
 
 # Access database file for orgdata
-db: KHelsa.mdb
-logg: KHlogg.mdb
+KH.db: KHelsa.mdb
+KH.logg: KHlogg.mdb
 
 # Geographical granularities
 geo.levels:
@@ -58,3 +71,24 @@ columns:
  - ALDER
  - UTDANN
  - LANDSSB
+
+# Diverse fra khglobs
+kolorgs: c("GEO", "AAR", "KJONN", "ALDER", "UTDANN", "INNVKAT", "LANDBAK", "TAB1", "TAB2", "TAB3", "VAL1", "VAL2", "VAL3")
+taborgs: c("GEO", "AAR", "KJONN", "ALDER", "TAB1", "TAB2", "TAB3")
+NesstarOutputDef: c(MT = "MALTALL", `T` = "TELLER", N = "NEVNER", RATE = "RATE", SMR = "SMR", MEIS = "MEIS", ST = "sumTELLER", SN = "sumNEVNER", SPT = "sumPREDTELLER", RN = "RATE.n")
+FriskvikTabs: c("GEO", "AAR", "KJONN", "ALDER", "UTDANN", "INNVKAT", "LANDBAK", "ETAB")
+FriskvikVals: c("sumTELLER", "sumNEVNER", "RATE", "MALTALL", "sumPREDTELLER", "PREDTELLER", "SMR", "NORM", "MEIS", "RATE.n")
+QCVals: c("TELLER", "NEVNER", "sumTELLER", "sumNEVNER", "RATE.n")
+geo_illeg: "GGG"
+alder_illeg: "888_888"
+alder_ukjent: "999_999"
+kjonn_illeg: "8"
+kjonn_ukjent: "9"
+aar_illeg: "8888_8888"
+utdann_illeg: "8"
+utdann_ukjent: "9"
+landbak_illeg: "8"
+landbak_ukjent: "9"
+innvkat_illeg: "8"
+innvkat_ukjent: "9"
+DefDumpFormat: "CSV"

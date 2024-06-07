@@ -6,13 +6,15 @@ year: 2024
 encoding.access: UTF-8
 encoding.csv: Latin-1
 
-# Paths
+# Paths. Used to generate paths using `is_orgcube_path()`
 folder.root: "O:/Prosjekt/FHP/PRODUKSJON"
+# Main folders
 folder.db: "STYRING"
 folder.data: "ORGDATA"
 folder.dumps: "RUNTIMEDUMP"
 folder.filegroups: "PRODUKTER/MELLOMPROD/R/STABLAORG"
-folder.cube: "PRODUKTER/KUBER"
+folder.kommunehelsa: "PRODUKTER/KUBER/KOMMUNEHELSA"
+folder.norgeshelsa: "PRODUKTER/KUBER/NORGESHELSA"
 folder.friskvikF: "PRODUKTER/KUBER/FRISKVIK_FYLKE"
 folder.friskvikK: "PRODUKTER/KUBER/FRISKVIK_KOMM"
 folder.friskvikB: "PRODUKTER/KUBER/FRISKVIK_BYDEL"
@@ -20,13 +22,16 @@ folder.ovpF: "PRODUKTER/KUBER/OVP_FYLKE"
 folder.ovpK: "PRODUKTER/KUBER/OVP_KOMM"
 folder.ovpB: "PRODUKTER/KUBER/OVP_BYDEL"
 folder.buffer: file.path(fs::path_home(), "helseprofil")
+# Subfolders
+folder.sub.datert: "DATERT"
+folder.sub.nyeste: "NYESTE"
+folder.sub.QC: "QC"
+folder.sub.specs: "SPECS"
+# Formatfolders
+folder.format.csv: "csv"
+folder.format.R: "R"
 
-type.datert: "DATERT"
-type.nyeste: "NYESTE"
-type.QC: "QC"
-format.csv: "csv"
-format.R: "R"
-
+# 
 stataprikkfile: "BIN/Z_Statasnutter/StataPrikking.do"
 
 # Access database file for orgdata

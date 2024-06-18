@@ -21,7 +21,6 @@ folder.friskvikB: "PRODUKTER/KUBER/FRISKVIK_BYDEL"
 folder.ovpF: "PRODUKTER/KUBER/OVP_FYLKE"
 folder.ovpK: "PRODUKTER/KUBER/OVP_KOMM"
 folder.ovpB: "PRODUKTER/KUBER/OVP_BYDEL"
-folder.buffer: file.path(fs::path_home(), "helseprofil")
 # Subfolders
 folder.sub.datert: "DATERT"
 folder.sub.nyeste: "NYESTE"
@@ -31,51 +30,20 @@ folder.sub.specs: "SPECS"
 folder.format.csv: "csv"
 folder.format.R: "R"
 
-# 
+# Script files
 stataprikkfile: "BIN/Z_Statasnutter/StataPrikking.do"
 
 # Access database file for orgdata
 db: KHelsa.mdb
 logg: KHlogg.mdb
 
-# Geographical granularities
-geo.levels:
-  - land
-  - grunnkrets
-  - fylke
-  - kommune
-  - bydel
-  - delbydel
-
-## How many digits to represent geo codes including the leading zero
-geo.digits:
-  - land : 1
-  - grunnkrets : 8
-  - fylke : 2
-  - kommune : 4
-  - bydel : 6
-  - delbydel : 8
-
-# Abbreviation for geo granularities that will be used in AGGREGATE column in
-# tabel FILGRUPPE in MS Access database.
-geo.abv:
-  - land : L
-  - grunnkrets : G
-  - fylke : F
-  - kommune : K
-  - bydel : B
-  - delbydel : D
-
-# Standard columns that will be in the output dataset whenever available in the
-# original dataset
-columns:
- - GEO
- - LEVEL
- - AAR
- - KJONN
- - ALDER
- - UTDANN
- - LANDSSB
+# Aggregation information
+totalcodes:
+  GEOniv: "L"
+  KJONN: 0
+  UTDANN: 0
+  INNVKAT: 0
+  LANDBAK: 0
 
 # Diverse fra khglobs
 kolorgs: 
@@ -101,16 +69,16 @@ taborgs:
  - TAB2
  - TAB3
 NesstarOutputDef: 
-  MT: "MALTALL"
-  T: "TELLER"
-  N: "NEVNER"
-  RATE: "RATE"
-  SMR: "SMR"
-  MEIS: "MEIS"
-  ST: "sumTELLER"
-  SN: "sumNEVNER"
-  SPT: "sumPREDTELLER"
-  RN: "RATE.n"
+  "MT": "MALTALL"
+  "T": "TELLER"
+  "N": "NEVNER"
+  "RATE": "RATE"
+  "SMR": "SMR"
+  "MEIS": "MEIS"
+  "ST": "sumTELLER"
+  "SN": "sumNEVNER"
+  "SPT": "sumPREDTELLER"
+  "RN": "RATE.n"
 FriskvikTabs: 
  - GEO 
  - AAR
@@ -150,3 +118,4 @@ landbak_ukjent: "9"
 innvkat_illeg: "8"
 innvkat_ukjent: "9"
 DefDumpFormat: "CSV"
+amax: 120

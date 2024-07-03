@@ -8,16 +8,16 @@ encoding: latin1
 encoding.access: UTF-8
 encoding.csv: Latin-1
 
-win.drive: "F:"
-linux.drive: "/mnt/F"
+win.drive: "O:"
+linux.drive: "/mnt/O"
 
 # Where the database files are kept
 folder.db:
- - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/STYRING/raw-khelse"
+ - "Prosjekt/FHP/PRODUKSJON/STYRING/raw-khelse"
 
 # Where the original data files are read from
 folder.data:
- - "Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/ORGDATA"
+ - "Prosjekt/FHP/PRODUKSJON/ORGDATA"
 
 # Foldername to keep all original data in DuckDB. Root folder is folder.db above
 folder.org.db: org_database

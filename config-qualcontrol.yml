@@ -12,6 +12,16 @@ mode:
   fvf: "FRISKVIK_FYLKE"
   ovb: "OVP_BYDEL"
   ovk: "OVP_KOMM"
+  
+rename:
+  "antall": TELLER
+  "Crude": RATE
+  "Adjusted": MEIS
+  "sumteller": sumTELLER
+  "sumnevner": sumNEVNER
+  "smr": SMR
+  "FLx": MEIS
+  "Utdanningsnivå": UTDANN
 
 # Filedumps
 dumps:

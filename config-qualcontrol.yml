@@ -1,4 +1,19 @@
 year: 2024
+
+# Paths
+root: "O:/Prosjekt/FHP/PRODUKSJON"
+output: "VALIDERING/KVALITETSKONTROLL"
+files: "PRODUKTER/KUBER"
+mode: 
+  kh: "KOMMUNEHELSA"
+  nh: "NORGESHELSA"
+  fvb: "FRISKVIK_BYDEL"
+  fvk: "FRISKVIK_KOMM"
+  fvf: "FRISKVIK_FYLKE"
+  ovb: "OVP_BYDEL"
+  ovk: "OVP_KOMM"
+
+# Filedumps
 dumps:
   - "dfnew_flag"
   - "dfold_flag"

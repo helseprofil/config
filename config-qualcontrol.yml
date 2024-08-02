@@ -29,3 +29,5 @@ dumps:
   - "dfold_flag"
   - "compareKUBE"
 
+# DEVELOP
+skipslowtest: TRUE

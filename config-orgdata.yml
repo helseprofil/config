@@ -52,6 +52,7 @@ geo.levels:
   - kommune
   - bydel
   - delbydel
+  - levekaar
 
 ## How many digits to represent geo codes including the leading zero
 geo.digits:
@@ -61,6 +62,7 @@ geo.digits:
   - kommune : 4
   - bydel : 6
   - delbydel : 8
+  - levekaar : 8
 
 # Abbreviation for geo granularities that will be used in AGGREGATE column in
 # tabel FILGRUPPE in MS Access database.
@@ -71,6 +73,7 @@ geo.abv:
   - kommune : K
   - bydel : B
   - delbydel : D
+  - levekaar : V
 
 # Standard columns that will be in the output dataset whenever available in the
 # original dataset

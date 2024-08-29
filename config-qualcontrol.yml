@@ -33,6 +33,15 @@ standarddimensions:
   - INNVKAT
   - LANDBAK
   
+standardvalues:
+  - TELLER
+  - sumTELLER
+  - NEVNER
+  - sumNEVNER
+  - MEIS
+  - RATE
+  - SMR
+  
 # Filedumps
 dumps:
   - "compareKUBE"

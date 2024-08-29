@@ -12,7 +12,8 @@ mode:
   fvf: "FRISKVIK_FYLKE"
   ovb: "OVP_BYDEL"
   ovk: "OVP_KOMM"
-  
+ 
+# Columns 
 rename:
   "antall": TELLER
   "Crude": RATE
@@ -22,11 +23,18 @@ rename:
   "smr": SMR
   "FLx": MEIS
   "Utdanningsnivå": UTDANN
-
+  
+standarddimensions:
+  - GEO
+  - AAR
+  - KJONN
+  - ALDER
+  - UTDANN
+  - INNVKAT
+  - LANDBAK
+  
 # Filedumps
 dumps:
-  - "dfnew_flag"
-  - "dfold_flag"
   - "compareKUBE"
 
 # DEVELOP parameters

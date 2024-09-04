@@ -44,7 +44,8 @@ standardvalues:
   
 # Filedumps
 dumps:
-  - "compareKUBE"
+  - comparecube
+  - newcube_flag
 
 # DEVELOP parameters
 skipslowtest: TRUE
